@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gelfiltration</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+
+        hr {
+            border-width: 3px;
+            border-color: #2e99a9;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 36px;
+            margin: 0;
+            color: #555555;
+        }
+
+        h2 {
+            background: #f7f7f7;
+            padding: 20px 15px 18px;
+            color: #333;
+            border-left: 9px solid #4865b2;
+            line-height: 36px;
+            margin: 0px
+        }
+
+        .content {
+            font-size: 18px;
+            color: #030303;
+            line-height: 40px;
+        }
+
+        .box {
+            font-size: 14px;
+            padding: 15px;
+            background-color: #fafafa;
+            outline: 1px solid #f0f0f0;
+            border-color: #f0f0f0;
+            text-align: left;
+            margin: 15px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .link {
+            font-size: 14px;
+            text-align: left;
+            margin: 30px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+
+        .resize {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin-right: 250px;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            position: relative;
+
+        }
+
+        .annotation p {
+            font-size: 15px;
+            line-height: 15px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>
+        Gel filtration
+    </h1>
+    <hr>
+    <p>
+    <div class="box">
+
+        <ol type="1">
+            <li><b>Column name</b>: Superdex 200 Increase 10/300 GL</li>
+            <li><b>Bed volume</b>: 24 mL</li>
+            <li><b>Sample volume</b> 25 µL ~ 500 µL</li>
+            <li><b>Limit pressure</b>: 435 psi</li>
+            <li><b>Max flow rate (water, low temperature)</b>: 0.9 ml/min</li>
+            <li><b>Max flow rate (20 % ethanoal low temperature)</b>: 0.45 ml/min</li>
+
+        </ol>
+    </div>
+    </p>
+
+    <p class="link">
+    <ul>
+        <li>
+            <a href="https://www.gelifesciences.co.jp/catalog/0064.html" target="_blank">
+                GE Healthcare home page (Superdex column)
+            </a>
+        </li>
+        <li>
+            <a href="http://www.vtpup.cz/common/manual/PrF_labbioch_BioRad_DuoFlow_manual_EN.pdf" target="_blank">
+                Biorad chromatography system documentation
+            </a>
+        </li>
+    </ul>
+    </p>
+    <hr>
+
+
+    <h2><span>Preparation</span></h2>
+    <div class="content">
+        <ol type="1">
+            <li>Filtrate buffer, sonicate to break small bubbles</li>
+            <li>Install "Backpressure Regulator" to the chromatography (the Backpressure Regulator helps eliminate
+                bubble
+                formation within the detector. without this, flow rate can be unstable). Don't forget to uninstall after
+                use.
+                <div class="annotation">
+                    <img src="image/IMG_0199.JPG" class="img-fluid resize">
+                    <p>Connect the backpressureregulator after the Conductivity monitor in the system plumbing.</p>
+                </div>
+            </li>
+            <li>Wash column with DW</li>
+            <li>Equilibrate column with buffer</li>
+            <li>Filtrate or ultra-centrifuge your sample</li>
+        </ol>
+    </div>
+
+
+    <h2>Column wash</h2>
+    <div class="content">
+        <p>
+        <ol>
+            <li>Change flow-path to 1-1</li>
+            <li>
+                Change the mode to <span class="badge badge-secondary">P</span> (Purge)
+            </li>
+            <li>Put A and/or B tubes in water</li>
+            <li>Replace pump content with DW</li>
+            <ol>
+                <li>Insert 20 mL syringe to the priming port.</li>
+                <li>Turn the port counterclockwise.</li>
+                <li>Pull slowly 15 mL with the syringe.</li>
+            </ol>
+            <li>Push "Purge" <span class="badge badge-secondary">A</span> and/or <span
+                        class="badge badge-secondary">B</span> button for ~ 5 s
+            </li>
+            <li>Run wash protocol (column volume x 3 (72 mL))</li>
+            <li>Repeat the above steps with your buffer</li>
+            <li>
+                After the experiment, wash column with DW and replace with 20 % ethanol for long storage. If you're
+                going to do the
+                experiment in a few days, it is not necessary for 20 % ethanol wash. Only DW wash is OK.
+            </li>
+        </ol>
+        </p>
+    </div>
+
+    <h2>Change and wash a sample loop</h2>
+
+    <div class="content">
+        <ol>
+            <li>
+                Change to <span class="badge badge-secondary">L</span> (Load) mode. Set flow-path to 1-1.
+            </li>
+
+            <li>Install a loop.</li>
+
+            <li>Wash the loop (Ethanol -> DW -> Buffer)</li>
+            <ol>
+                <li>Change to <span class="badge badge-secondary">I</span> (Inject) mode.</li>
+                <li>Draw  buffer into 20 mL syringe. Push out bubbles.</li>
+                <li>Install a needle to the syringe.</li>
+                <li>Insert the needle to the injection port</li>
+                <li>Change to <span class="badge badge-secondary">L</span> (Load) mode.</li>
+                <li>Push the syringe to fill the sample loop with buffer</li>
+                <li>Change to <span class="badge badge-secondary">I</span> (Inject) mode.</li>
+                <li>Pull out the needle.</li>
+            </ol>
+
+        </ol>
+
+    </div>
+
+    <h2>Sample preparation</h2>
+    <div class="content">
+        <p>
+            Before starting the experiments, set the appropriate max pressure and test manually by flowing buffer to the
+            column. Check your run protocol.
+        </p>
+
+        <ol>
+            <li>Set flow-path to 1-1.</li>
+            <li>Change to <span class="badge badge-secondary">I</span> (Inject) mode.</li>
+            <li>Filtrate your sample with 0.22 µm filter or centrifuge with TLA100.3 rotor 4 ºC, 50,000 rpm, 15 min.
+            </li>
+            <li>Draw buffer into a syringe.</li>
+            <li>Install a needle and push out buffer, remaining ~ 50 µL.</li>
+            <li>Draw your sample into the syringe.</li>
+            <li>Insert the needle to the injection port.</li>
+            <li>Switch to <span class="badge badge-secondary">L</span> (Load).</li>
+            <li>Push your sample slowly to the loop to avoid bubbles.　Load the sample until it exits the waste tube. Do
+                NOT
+                leave bubbles in the sample loop. This step is irreversible. Handle carefully.
+            </li>
+            <li>Switch the path to the size exclusion column.</li>
+            <li>
+                Set collection tubes.
+            </li>
+            <li>Turn the UV detector on.</li>
+            <li>Run the program.</li>
+            <li>
+                Check the drop if it's safely going into collection tubes. The position of the fraction collector is a little
+                off for unknown reason.
+            </li>
+            <li>
+                After the experiment, turn off the UV detector.
+            </li>
+            <li>
+                Run a wash program.
+            </li>
+        </ol>
+    </div>
+    <hr>
+</body>
+
+</html>
